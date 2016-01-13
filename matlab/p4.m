@@ -22,5 +22,6 @@ function [ delta_4_i, delta_4 ] = p4( RR, y, ton )
 		delta_4 = -1;
 		delta_4_i = mint_i;
     end
+    
 end
 

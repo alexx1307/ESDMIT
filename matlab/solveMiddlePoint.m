@@ -1,5 +1,5 @@
 
-function [ newMiddle, leftError,rightError, leftCoeffs, rightCoeffs] = solveMiddlePoint(x,y,middle,leftDeg,rightDeg)
+function [ newMiddle, error, leftCoeffs, rightCoeffs] = solveMiddlePoint(x,y,middle,leftDeg,rightDeg)
 %     if middle < 2
 %         newMiddle = 1;
 %         leftError = 0;
