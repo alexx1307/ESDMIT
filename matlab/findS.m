@@ -8,7 +8,7 @@ function [  S,  S_i ] = findS( y_1 )
 
 	am = 0.0;
 	ap = 0.0;
-	[Smin_y, Smin_yi] = min(y_1:2:floor(length(y_1) / 2));
+	[Smin_y, Smin_yi] = min(y_1(2:floor(length(y_1) / 2)));
     
   
 	Se_flag = 0;

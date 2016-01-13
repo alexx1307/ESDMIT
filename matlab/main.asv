@@ -1,4 +1,4 @@
-json = loadjson('..\inputs\100.json')
+json = loadjson('..\inputs\e0161.json')
 %ecgData = M(:,1);
 ecgData = json.input.ecgbaseline +1;
 rpeaks =  json.input.rpeaks + 1;

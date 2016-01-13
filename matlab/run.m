@@ -28,7 +28,7 @@ function [ m1s, r1s, p4s, p3s, p2s, p1s, typy, nachylenia, epizody ] = run( ecgD
     epizody = [];
     %%%%%%%%%%%%%%%%
     
-    for k = 50:80%l_r-2
+    for k = 1:500%l_r-2
 			RR = Rpeaks(k + 1) - Rpeaks(k);
             
 			%analiza pojedynczego przebiegu EKG
@@ -38,7 +38,7 @@ function [ m1s, r1s, p4s, p3s, p2s, p1s, typy, nachylenia, epizody ] = run( ecgD
             Tpeak_yi = Tpeaks (k) - Rpeaks(k) +1;
             Tpeak_y = y_1(Tpeak_yi);
 
-			[S, S_i] = findS( y_1);
+			[S, S_i] = findS( y_1)
             
 			L_sit=Tpeak_yi-S_i;
 		
