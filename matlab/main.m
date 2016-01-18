@@ -3,9 +3,9 @@ json = loadjson('..\inputs\100.json')
 ecgData = json.input.ecgbaseline +1;
 rpeaks =  json.input.rpeaks + 1;
 qrsEnd = json.input.qrsend + 1;
-tpeaks = json.input.tpeak;
+tpeaks = json.input.tpeak +1;
 
-ecgData = ecgData';
+ecgData = ecgData;
 
 ws = warning('off','all');
 tic
@@ -30,13 +30,13 @@ matlab6 = sum(typy(:)==6)
 matlab0 = sum(typy(:)==0)
 
 
-cpp1 = sum(json.output.types(:)==1)
-cpp2 = sum(json.output.types(:)==2)
-cpp3 = sum(json.output.types(:)==3)
-cpp4 = sum(json.output.types(:)==4)
-cpp5 = sum(json.output.types(:)==5)
-cpp6 = sum(json.output.types(:)==6)
-cpp0 = sum(json.output.types(:)==0)
+% cpp1 = sum(json.output.types(:)==1)
+% cpp2 = sum(json.output.types(:)==2)
+% cpp3 = sum(json.output.types(:)==3)
+% cpp4 = sum(json.output.types(:)==4)
+% cpp5 = sum(json.output.types(:)==5)
+% cpp6 = sum(json.output.types(:)==6)
+% cpp0 = sum(json.output.types(:)==0)
 
 
 
